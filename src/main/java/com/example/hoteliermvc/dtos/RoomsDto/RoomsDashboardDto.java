@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class RoomsDashboardDto {
 
     private long id;
-    private String product;
+    private String aboutRoom;
     private Integer numroom ;
     private Double price;
     private String photo;

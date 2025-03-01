@@ -11,16 +11,16 @@
 <div layout:fragment="body">
   <form method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <input type="text" name="product" th:value="${rooms.product}" class="form-control col-4"
-             placeholder="rooms title" required/>
+      <input type="text" name="aboutRoom" th:value="${rooms.aboutRoom}" class="form-control col-4"
+             placeholder="Haqqinda" required/>
     </div>
 
     <div class="form-group">
-      <input type="number" step="1" name="weight" th:value="${rooms.numroom}" class="form-control col-4"
-             placeholder="article title" required/>
+      <input type="number" step="1" name="numRoom" th:value="${rooms.numroom}" class="form-control col-4"
+             placeholder="otaq sayi" required/>
     </div><div class="form-group">
     <input type="number" step="0.01" name="price" th:value="${rooms.price}" class="form-control col-4"
-           placeholder="rooms title" required/>
+           placeholder="qiymet" required/>
   </div>
     <div class="form-group">
       <input type="file" name="image" class="form-control col-4" required/>

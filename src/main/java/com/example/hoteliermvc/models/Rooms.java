@@ -15,7 +15,7 @@ public class Rooms{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String product;
+    private String aboutRoom;
     private Integer numroom ;
     private Double price;
     private String photo;

@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 @Data
 public class RoomsCreateDto {
-    private String product;
+    private String aboutRoom;
     private Integer numroom ;
     private Double price;
     private String photo;

@@ -2,12 +2,10 @@ package com.example.hoteliermvc.controlles;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
-import com.example.hoteliermvc.dtos.CategoryDto.CategoryDto;
 import com.example.hoteliermvc.dtos.CategoryDto.CategoryHomeDto;
 import com.example.hoteliermvc.dtos.RoomsDto.RoomsCreateDto;
 import com.example.hoteliermvc.dtos.RoomsDto.RoomsDashboardDto;
 import com.example.hoteliermvc.dtos.RoomsDto.RoomsUpdateDto;
-import com.example.hoteliermvc.dtos.ServicesDto.ServicesUpdateDto;
 import com.example.hoteliermvc.services.CategoryService;
 import com.example.hoteliermvc.services.RoomsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,16 +18,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 @Controller
 public class RoomsController {
-    public static String UPLOAD_DIRECTORY = System.getProperty("user.dir") + "/src/main/resources/static/uploads/";
     @Autowired
     private RoomsService roomsService;
     @Autowired

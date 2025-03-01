@@ -40,7 +40,7 @@ public class CategoryController {
         @GetMapping("/dashboard/category/update/{id}")
         public String updateCategory(@PathVariable Long id, Model model) {
         CategoryUpdateDto data = categoryService.findCategoryById(id);
-        model.addAttribute("categories", data);
+        model.addAttribute("category", data);
         return "/dashboard/category/update";
     }
 

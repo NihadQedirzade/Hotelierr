@@ -31,7 +31,7 @@ public class RoomsServiceImpl implements RoomsService {
         Category findCategory = categoryService.findById(roomsCreateDto.getCategoryId());
         Rooms rooms = new Rooms();
 
-        rooms.setProduct(roomsCreateDto.getProduct());
+        rooms.setAboutRoom(roomsCreateDto.getAboutRoom());
         rooms.setPrice(roomsCreateDto.getPrice());
         rooms.setNumroom(roomsCreateDto.getNumroom());
         rooms.setPhoto(roomsCreateDto.getPhoto());
@@ -44,7 +44,7 @@ public class RoomsServiceImpl implements RoomsService {
     public void updateRoom(RoomsUpdateDto roomsUpdateDto, Long id) {
         Category findCategory = categoryService.findById(roomsUpdateDto.getCategoryId());
         Rooms findRooms = roomsRepository.findById(id).orElseThrow();
-        findRooms.setProduct(roomsUpdateDto.getProduct());
+        findRooms.setAboutRoom(roomsUpdateDto.getAboutRoom());
         findRooms.setPrice(roomsUpdateDto.getPrice());
         findRooms.setNumroom(roomsUpdateDto.getNumroom());
         findRooms.setPhoto(roomsUpdateDto.getPhoto());

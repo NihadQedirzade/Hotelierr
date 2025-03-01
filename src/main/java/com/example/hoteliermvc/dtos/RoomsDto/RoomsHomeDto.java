@@ -7,7 +7,7 @@ import java.time.LocalDate;
 @Data
 public class RoomsHomeDto {
     private long id;
-    private String product;
+    private String aboutRoom;
     private Integer numroom ;
     private Double price;
     private String photo;
